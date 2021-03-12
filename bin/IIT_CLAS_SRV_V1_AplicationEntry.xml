@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns:ns2="http://www.ibm.com/ims/Transaction">
+    <shallow>true</shallow>
+    <serviceName>IIT_CLAS_SRV_V1_AplicationEntry</serviceName>
+    <serviceType>ims-rest</serviceType>
+    <resourceType>TRAN</resourceType>
+    <status>1</status>
+    <conversionType>3</conversionType>
+    <dataProtocol>0</dataProtocol>
+    <serviceInputInterface>
+        <metadataName>NCWM0300.si</metadataName>
+        <serviceInterface>
+            <interface>
+                <segment segmentName="APANCOMM">
+                    <interfaceField included="Y" fieldName="NCWM0300">
+                        <field included="Y" fieldName="MIR_MAP_INTERFACE">
+                            <field included="Y" fieldName="MIR_LENGTH"/>
+                            <field included="Y" fieldName="MTPI_PARMS">
+<field included="Y" fieldName="MTPI_CURSOR_POS"/>
+<field included="N" fieldName="MTPI_TRANSACTION_ID"/>
+<field included="Y" fieldName="MTPI_PROGRAM_ID"/>
+<field included="Y" fieldName="MTPI_APPL_ID"/>
+<field included="Y" fieldName="MTPI_COMPANY_CODE"/>
+<field included="N" fieldName="MTPI_COUNTRY_CODE"/>
+<field included="N" fieldName="MTPI_CURRENCY_CODE"/>
+<field included="Y" fieldName="MTPI_PROCESS_DATE"/>
+<field included="Y" fieldName="MTPI_EDIT_LANG" isHex="false"/>
+<field included="N" fieldName="MTPI_USER_LANG"/>
+<field included="N" fieldName="MTPI_USER_SECURITY"/>
+<field included="N" fieldName="MTPI_SESSION_IND"/>
+<field included="N" fieldName="MTPI_MAP_SCREEN_NO"/>
+<field included="N" fieldName="MTPI_PROCESS_PCL_IND"/>
+<field included="N" fieldName="MTPI_PCL_CURR_ENTRY"/>
+<field included="N" fieldName="MTPI_PCL_MAX_ENTRY"/>
+<field included="N" fieldName="MTPI_PCL_NEXT_ENTRY_ID"/>
+<field included="N" fieldName="MTPI_CMD_LINE"/>
+<field included="N" fieldName="MTPI_APPL_WORK_AREA"/>
+<field included="N" fieldName="MTPI_USER_ID"/>
+<field included="N" fieldName="MTPI_USER_SEC_CLASS"/>
+<field included="N" fieldName="MTPI_TERMINAL_ID"/>
+<field included="N" fieldName="MTPI_SYSTEM_DATE"/>
+<field included="N" fieldName="MTPI_SYSTEM_TIME"/>
+<field included="N" fieldName="MTPI_SYSTEM_DATE_INT"/>
+<field included="N" fieldName="MTPI_USER_MSGE_CLASS"/>
+<field included="N" fieldName="MTPI_USER_CON_IND"/>
+<field included="N" fieldName="MTPI_USER_LEVEL_IND"/>
+<field included="N" fieldName="MTPI_USER_BRANCH_CODE"/>
+<field included="N" fieldName="MTPI_TASK_ID"/>
+<field included="N" fieldName="MTPI_USER_RPT_DSTRB_CD"/>
+<field included="N" fieldName="MTPI_USER_SESN_BTCH_NUM"/>
+<field included="N" fieldName="MTPI_TIMES_THRU_IND"/>
+<field included="N" fieldName="MTPI_SEND_MAP_IND"/>
+<field included="N" fieldName="MTPI_CURSOR_POS_IND"/>
+                            </field>
+                            <field included="N" fieldName="MIR_MSGE_DATA">
+<field included="N" fieldName="MIR_MSGE_MAX_LINES"/>
+<field included="N" fieldName="MIR_MSGE_LINES_USED"/>
+                            </field>
+                            <field included="Y" fieldName="MIR_SCREEN_1">
+<field included="Y" fieldName="MIR_SCREEN_1_FIELDS">
+    <field included="Y" fieldName="MIR_TRNID"/>
+    <field included="N" fieldName="MIR_FORCE"/>
+    <field included="N" fieldName="MIR_HDG"/>
+    <field included="N" fieldName="MIR_MSFLDA"/>
+    <field included="N" fieldName="MIR_MSFLDB"/>
+    <field included="Y" fieldName="MIR_CMD"/>
+    <field included="N" fieldName="MIR_MSGE_TABLE">
+        <field included="N" fieldName="MIR_MSGE_T_SUB"/>
+    </field>
+    <field included="Y" fieldName="MIR_POLNO"/>
+    <field included="Y" fieldName="MIR_POLSF"/>
+    <field included="Y" fieldName="MIR_MENAE"/>
+    <field included="N" fieldName="MIR_POLST"/>
+    <field included="N" fieldName="MIR_CLSNM"/>
+    <field included="N" fieldName="MIR_CVGTL"/>
+    <field included="N" fieldName="MIR_AGT_TABLE">
+        <field included="N" fieldName="MIR_AGT_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_SHR_TABLE">
+        <field included="N" fieldName="MIR_SHR_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ABR_TABLE">
+        <field included="N" fieldName="MIR_ABR_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ANM_TABLE">
+        <field included="N" fieldName="MIR_ANM_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_PLNCD"/>
+    <field included="N" fieldName="MIR_RTSCL"/>
+    <field included="N" fieldName="MIR_EXEMPT"/>
+    <field included="Y" fieldName="MIR_ISLOC"/>
+    <field included="Y" fieldName="MIR_CRLOC"/>
+    <field included="N" fieldName="MIR_CTRYC"/>
+    <field included="N" fieldName="MIR_CRNCY"/>
+    <field included="Y" fieldName="MIR_AGENT"/>
+    <field included="N" fieldName="MIR_BRNCH"/>
+    <field included="N" fieldName="MIR_LTNAA"/>
+    <field included="N" fieldName="MIR_BRNAM"/>
+    <field included="N" fieldName="MIR_MAGNM"/>
+    <field included="N" fieldName="MIR_APPLS"/>
+    <field included="N" fieldName="MIR_APLSI"/>
+    <field included="N" fieldName="MIR_APLMS"/>
+    <field included="N" fieldName="MIR_APPLR"/>
+    <field included="N" fieldName="MIR_APPLT"/>
+    <field included="N" fieldName="MIR_PCLI"/>
+    <field included="N" fieldName="MIR_APPSM"/>
+    <field included="N" fieldName="MIR_RSHIN"/>
+    <field included="N" fieldName="MIR_UNMIN"/>
+    <field included="N" fieldName="MIR_PASUW"/>
+    <field included="N" fieldName="MIR_ZAPIND"/>
+    <field included="N" fieldName="MIR_SUPII"/>
+    <field included="N" fieldName="MIR_LNPII"/>
+    <field included="N" fieldName="MIR_RPLPI"/>
+    <field included="N" fieldName="MIR_PLCNF"/>
+    <field included="N" fieldName="MIR_OPTKI"/>
+    <field included="N" fieldName="MIR_CONOP"/>
+    <field included="N" fieldName="MIR_CONOS"/>
+    <field included="N" fieldName="MIR_RLST1"/>
+    <field included="N" fieldName="MIR_APPLF"/>
+    <field included="N" fieldName="MIR_NOAPP"/>
+    <field included="N" fieldName="MIR_RHIND"/>
+    <field included="N" fieldName="MIR_RHUSR"/>
+    <field included="N" fieldName="MIR_RQHDT"/>
+    <field included="N" fieldName="MIR_RQRDT"/>
+    <field included="N" fieldName="MIR_UWCID"/>
+    <field included="N" fieldName="MIR_IRPGM"/>
+    <field included="N" fieldName="MIR_APPRE"/>
+    <field included="N" fieldName="MIR_TLIAIND"/>
+    <field included="N" fieldName="MIR_APPRD"/>
+    <field included="N" fieldName="MIR_BONI"/>
+    <field included="N" fieldName="MIR_PRTDTE"/>
+    <field included="N" fieldName="MIR_NBSYS"/>
+    <field included="N" fieldName="MIR_APPSRC"/>
+    <field included="N" fieldName="MIR_PARCD"/>
+    <field included="N" fieldName="MIR_LOB"/>
+    <field included="N" fieldName="MIR_LOBD"/>
+    <field included="N" fieldName="MIR_SOF"/>
+    <field included="N" fieldName="MIR_SOFD"/>
+    <field included="N" fieldName="MIR_VRSP"/>
+    <field included="N" fieldName="MIR_VRSPD"/>
+    <field included="N" fieldName="MIR_PRMDT"/>
+    <field included="N" fieldName="MIR_PREM"/>
+    <field included="N" fieldName="MIR_COMUT"/>
+    <field included="N" fieldName="MIR_ENHC"/>
+    <field included="N" fieldName="MIR_ENHCD"/>
+    <field included="N" fieldName="MIR_ISLOCD"/>
+    <field included="N" fieldName="MIR_INTR"/>
+    <field included="N" fieldName="MIR_ACCUPL"/>
+    <field included="N" fieldName="MIR_POLDTE"/>
+    <field included="N" fieldName="MIR_DTETYP"/>
+    <field included="N" fieldName="MIR_COORDNM"/>
+    <field included="N" fieldName="MIR_SFACD"/>
+    <field included="N" fieldName="MIR_SFAPY"/>
+    <field included="N" fieldName="MIR_SFASC"/>
+    <field included="N" fieldName="MIR_SFANM"/>
+    <field included="N" fieldName="MIR_COORD"/>
+    <field included="N" fieldName="MIR_MAILDT"/>
+    <field included="N" fieldName="MIR_PFKY_TABLE">
+        <field included="N" fieldName="MIR_PFKY_T_SUB"/>
+    </field>
+</field>
+<field included="N" fieldName="MIR_SCREEN_1_ATTRB">
+    <field included="N" fieldName="MIR_TRNID_A"/>
+    <field included="N" fieldName="MIR_FORCE_A"/>
+    <field included="N" fieldName="MIR_HDG_A"/>
+    <field included="N" fieldName="MIR_MSFLDA_A"/>
+    <field included="N" fieldName="MIR_MSFLDB_A"/>
+    <field included="N" fieldName="MIR_CMD_A"/>
+    <field included="N" fieldName="MIR_MSGE_TABLE_A">
+        <field included="N" fieldName="MIR_MSGE_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_POLNO_A"/>
+    <field included="N" fieldName="MIR_POLSF_A"/>
+    <field included="N" fieldName="MIR_MENAE_A"/>
+    <field included="N" fieldName="MIR_POLST_A"/>
+    <field included="N" fieldName="MIR_CLSNM_A"/>
+    <field included="N" fieldName="MIR_CVGTL_A"/>
+    <field included="N" fieldName="MIR_AGT_TABLE_A">
+        <field included="N" fieldName="MIR_AGT_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_SHR_TABLE_A">
+        <field included="N" fieldName="MIR_SHR_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ABR_TABLE_A">
+        <field included="N" fieldName="MIR_ABR_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ANM_TABLE_A">
+        <field included="N" fieldName="MIR_ANM_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_PLNCD_A"/>
+    <field included="N" fieldName="MIR_RTSCL_A"/>
+    <field included="N" fieldName="MIR_EXEMPT_A"/>
+    <field included="N" fieldName="MIR_ISLOC_A"/>
+    <field included="N" fieldName="MIR_CRLOC_A"/>
+    <field included="N" fieldName="MIR_CTRYC_A"/>
+    <field included="N" fieldName="MIR_CRNCY_A"/>
+    <field included="N" fieldName="MIR_AGENT_A"/>
+    <field included="N" fieldName="MIR_BRNCH_A"/>
+    <field included="N" fieldName="MIR_LTNAA_A"/>
+    <field included="N" fieldName="MIR_BRNAM_A"/>
+    <field included="N" fieldName="MIR_MAGNM_A"/>
+    <field included="N" fieldName="MIR_APPLS_A"/>
+    <field included="N" fieldName="MIR_APLSI_A"/>
+    <field included="N" fieldName="MIR_APLMS_A"/>
+    <field included="N" fieldName="MIR_APPLR_A"/>
+    <field included="N" fieldName="MIR_APPLT_A"/>
+    <field included="N" fieldName="MIR_PCLI_A"/>
+    <field included="N" fieldName="MIR_APPSM_A"/>
+    <field included="N" fieldName="MIR_RSHIN_A"/>
+    <field included="N" fieldName="MIR_UNMIN_A"/>
+    <field included="N" fieldName="MIR_PASUW_A"/>
+    <field included="N" fieldName="MIR_ZAPIND_A"/>
+    <field included="N" fieldName="MIR_SUPII_A"/>
+    <field included="N" fieldName="MIR_LNPII_A"/>
+    <field included="N" fieldName="MIR_RPLPI_A"/>
+    <field included="N" fieldName="MIR_PLCNF_A"/>
+    <field included="N" fieldName="MIR_OPTKI_A"/>
+    <field included="N" fieldName="MIR_CONOP_A"/>
+    <field included="N" fieldName="MIR_CONOS_A"/>
+    <field included="N" fieldName="MIR_RLST1_A"/>
+    <field included="N" fieldName="MIR_APPLF_A"/>
+    <field included="N" fieldName="MIR_NOAPP_A"/>
+    <field included="N" fieldName="MIR_RHIND_A"/>
+    <field included="N" fieldName="MIR_RHUSR_A"/>
+    <field included="N" fieldName="MIR_RQHDT_A"/>
+    <field included="N" fieldName="MIR_RQRDT_A"/>
+    <field included="N" fieldName="MIR_UWCID_A"/>
+    <field included="N" fieldName="MIR_IRPGM_A"/>
+    <field included="N" fieldName="MIR_APPRE_A"/>
+    <field included="N" fieldName="MIR_TLIAIND_A"/>
+    <field included="N" fieldName="MIR_APPRD_A"/>
+    <field included="N" fieldName="MIR_BONI_A"/>
+    <field included="N" fieldName="MIR_PRTDTE_A"/>
+    <field included="N" fieldName="MIR_NBSYS_A"/>
+    <field included="N" fieldName="MIR_APPSRC_A"/>
+    <field included="N" fieldName="MIR_PARCD_A"/>
+    <field included="N" fieldName="MIR_LOB_A"/>
+    <field included="N" fieldName="MIR_LOBD_A"/>
+    <field included="N" fieldName="MIR_SOF_A"/>
+    <field included="N" fieldName="MIR_SOFD_A"/>
+    <field included="N" fieldName="MIR_VRSP_A"/>
+    <field included="N" fieldName="MIR_VRSPD_A"/>
+    <field included="N" fieldName="MIR_PRMDT_A"/>
+    <field included="N" fieldName="MIR_PREM_A"/>
+    <field included="N" fieldName="MIR_COMUT_A"/>
+    <field included="N" fieldName="MIR_ENHC_A"/>
+    <field included="N" fieldName="MIR_ENHCD_A"/>
+    <field included="N" fieldName="MIR_ISLOCD_A"/>
+    <field included="N" fieldName="MIR_INTR_A"/>
+    <field included="N" fieldName="MIR_ACCUPL_A"/>
+    <field included="N" fieldName="MIR_POLDTE_A"/>
+    <field included="N" fieldName="MIR_DTETYP_A"/>
+    <field included="N" fieldName="MIR_COORDNM_A"/>
+    <field included="N" fieldName="MIR_SFACD_A"/>
+    <field included="N" fieldName="MIR_SFAPY_A"/>
+    <field included="N" fieldName="MIR_SFASC_A"/>
+    <field included="N" fieldName="MIR_SFANM_A"/>
+    <field included="N" fieldName="MIR_COORD_A"/>
+    <field included="N" fieldName="MIR_MAILDT_A"/>
+    <field included="N" fieldName="MIR_PFKY_TABLE_A">
+        <field included="N" fieldName="MIR_PFKY_T_A_SUB"/>
+    </field>
+</field>
+<field included="N" fieldName="MIR_SCREEN_1_LENGTHS">
+    <field included="N" fieldName="MIR_TRNID_L"/>
+    <field included="N" fieldName="MIR_FORCE_L"/>
+    <field included="N" fieldName="MIR_HDG_L"/>
+    <field included="N" fieldName="MIR_MSFLDA_L"/>
+    <field included="N" fieldName="MIR_MSFLDB_L"/>
+    <field included="N" fieldName="MIR_CMD_L"/>
+    <field included="N" fieldName="MIR_MSGE_TABLE_L">
+        <field included="N" fieldName="MIR_MSGE_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_POLNO_L"/>
+    <field included="N" fieldName="MIR_POLSF_L"/>
+    <field included="N" fieldName="MIR_MENAE_L"/>
+    <field included="N" fieldName="MIR_POLST_L"/>
+    <field included="N" fieldName="MIR_CLSNM_L"/>
+    <field included="N" fieldName="MIR_CVGTL_L"/>
+    <field included="N" fieldName="MIR_AGT_TABLE_L">
+        <field included="N" fieldName="MIR_AGT_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_SHR_TABLE_L">
+        <field included="N" fieldName="MIR_SHR_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ABR_TABLE_L">
+        <field included="N" fieldName="MIR_ABR_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ANM_TABLE_L">
+        <field included="N" fieldName="MIR_ANM_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_PLNCD_L"/>
+    <field included="N" fieldName="MIR_RTSCL_L"/>
+    <field included="N" fieldName="MIR_EXEMPT_L"/>
+    <field included="N" fieldName="MIR_ISLOC_L"/>
+    <field included="N" fieldName="MIR_CRLOC_L"/>
+    <field included="N" fieldName="MIR_CTRYC_L"/>
+    <field included="N" fieldName="MIR_CRNCY_L"/>
+    <field included="N" fieldName="MIR_AGENT_L"/>
+    <field included="N" fieldName="MIR_BRNCH_L"/>
+    <field included="N" fieldName="MIR_LTNAA_L"/>
+    <field included="N" fieldName="MIR_BRNAM_L"/>
+    <field included="N" fieldName="MIR_MAGNM_L"/>
+    <field included="N" fieldName="MIR_APPLS_L"/>
+    <field included="N" fieldName="MIR_APLSI_L"/>
+    <field included="N" fieldName="MIR_APLMS_L"/>
+    <field included="N" fieldName="MIR_APPLR_L"/>
+    <field included="N" fieldName="MIR_APPLT_L"/>
+    <field included="N" fieldName="MIR_PCLI_L"/>
+    <field included="N" fieldName="MIR_APPSM_L"/>
+    <field included="N" fieldName="MIR_RSHIN_L"/>
+    <field included="N" fieldName="MIR_UNMIN_L"/>
+    <field included="N" fieldName="MIR_PASUW_L"/>
+    <field included="N" fieldName="MIR_ZAPIND_L"/>
+    <field included="N" fieldName="MIR_SUPII_L"/>
+    <field included="N" fieldName="MIR_LNPII_L"/>
+    <field included="N" fieldName="MIR_RPLPI_L"/>
+    <field included="N" fieldName="MIR_PLCNF_L"/>
+    <field included="N" fieldName="MIR_OPTKI_L"/>
+    <field included="N" fieldName="MIR_CONOP_L"/>
+    <field included="N" fieldName="MIR_CONOS_L"/>
+    <field included="N" fieldName="MIR_RLST1_L"/>
+    <field included="N" fieldName="MIR_APPLF_L"/>
+    <field included="N" fieldName="MIR_NOAPP_L"/>
+    <field included="N" fieldName="MIR_RHIND_L"/>
+    <field included="N" fieldName="MIR_RHUSR_L"/>
+    <field included="N" fieldName="MIR_RQHDT_L"/>
+    <field included="N" fieldName="MIR_RQRDT_L"/>
+    <field included="N" fieldName="MIR_UWCID_L"/>
+    <field included="N" fieldName="MIR_IRPGM_L"/>
+    <field included="N" fieldName="MIR_APPRE_L"/>
+    <field included="N" fieldName="MIR_TLIAIND_L"/>
+    <field included="N" fieldName="MIR_APPRD_L"/>
+    <field included="N" fieldName="MIR_BONI_L"/>
+    <field included="N" fieldName="MIR_PRTDTE_L"/>
+    <field included="N" fieldName="MIR_NBSYS_L"/>
+    <field included="N" fieldName="MIR_APPSRC_L"/>
+    <field included="N" fieldName="MIR_PARCD_L"/>
+    <field included="N" fieldName="MIR_LOB_L"/>
+    <field included="N" fieldName="MIR_LOBD_L"/>
+    <field included="N" fieldName="MIR_SOF_L"/>
+    <field included="N" fieldName="MIR_SOFD_L"/>
+    <field included="N" fieldName="MIR_VRSP_L"/>
+    <field included="N" fieldName="MIR_VRSPD_L"/>
+    <field included="N" fieldName="MIR_PRMDT_L"/>
+    <field included="N" fieldName="MIR_PREM_L"/>
+    <field included="N" fieldName="MIR_COMUT_L"/>
+    <field included="N" fieldName="MIR_ENHC_L"/>
+    <field included="N" fieldName="MIR_ENHCD_L"/>
+    <field included="N" fieldName="MIR_ISLOCD_L"/>
+    <field included="N" fieldName="MIR_INTR_L"/>
+    <field included="N" fieldName="MIR_ACCUPL_L"/>
+    <field included="N" fieldName="MIR_POLDTE_L"/>
+    <field included="N" fieldName="MIR_DTETYP_L"/>
+    <field included="N" fieldName="MIR_COORDNM_L"/>
+    <field included="N" fieldName="MIR_SFACD_L"/>
+    <field included="N" fieldName="MIR_SFAPY_L"/>
+    <field included="N" fieldName="MIR_SFASC_L"/>
+    <field included="N" fieldName="MIR_SFANM_L"/>
+    <field included="N" fieldName="MIR_COORD_L"/>
+    <field included="N" fieldName="MIR_MAILDT_L"/>
+    <field included="N" fieldName="MIR_PFKY_TABLE_L">
+        <field included="N" fieldName="MIR_PFKY_T_L_SUB"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                    </interfaceField>
+                </segment>
+            </interface>
+        </serviceInterface>
+        <version>0</version>
+    </serviceInputInterface>
+    <serviceOutputInterface>
+        <metadataName>NCWM0300.si</metadataName>
+        <serviceInterface>
+            <interface>
+                <segment segmentName="APANCOMM">
+                    <interfaceField included="Y" fieldName="NCWM0300">
+                        <field included="Y" fieldName="MIR_MAP_INTERFACE">
+                            <field included="Y" fieldName="MIR_LENGTH"/>
+                            <field included="Y" fieldName="MTPI_PARMS">
+<field included="Y" fieldName="MTPI_CURSOR_POS"/>
+<field included="N" fieldName="MTPI_TRANSACTION_ID"/>
+<field included="Y" fieldName="MTPI_PROGRAM_ID"/>
+<field included="Y" fieldName="MTPI_APPL_ID"/>
+<field included="Y" fieldName="MTPI_COMPANY_CODE"/>
+<field included="N" fieldName="MTPI_COUNTRY_CODE"/>
+<field included="N" fieldName="MTPI_CURRENCY_CODE"/>
+<field included="Y" fieldName="MTPI_PROCESS_DATE"/>
+<field included="Y" fieldName="MTPI_EDIT_LANG" isHex="false"/>
+<field included="N" fieldName="MTPI_USER_LANG"/>
+<field included="N" fieldName="MTPI_USER_SECURITY"/>
+<field included="N" fieldName="MTPI_SESSION_IND"/>
+<field included="N" fieldName="MTPI_MAP_SCREEN_NO"/>
+<field included="N" fieldName="MTPI_PROCESS_PCL_IND"/>
+<field included="N" fieldName="MTPI_PCL_CURR_ENTRY"/>
+<field included="N" fieldName="MTPI_PCL_MAX_ENTRY"/>
+<field included="N" fieldName="MTPI_PCL_NEXT_ENTRY_ID"/>
+<field included="N" fieldName="MTPI_CMD_LINE"/>
+<field included="N" fieldName="MTPI_APPL_WORK_AREA"/>
+<field included="N" fieldName="MTPI_USER_ID"/>
+<field included="N" fieldName="MTPI_USER_SEC_CLASS"/>
+<field included="N" fieldName="MTPI_TERMINAL_ID"/>
+<field included="N" fieldName="MTPI_SYSTEM_DATE"/>
+<field included="N" fieldName="MTPI_SYSTEM_TIME"/>
+<field included="N" fieldName="MTPI_SYSTEM_DATE_INT"/>
+<field included="N" fieldName="MTPI_USER_MSGE_CLASS"/>
+<field included="N" fieldName="MTPI_USER_CON_IND"/>
+<field included="N" fieldName="MTPI_USER_LEVEL_IND"/>
+<field included="N" fieldName="MTPI_USER_BRANCH_CODE"/>
+<field included="N" fieldName="MTPI_TASK_ID"/>
+<field included="N" fieldName="MTPI_USER_RPT_DSTRB_CD"/>
+<field included="N" fieldName="MTPI_USER_SESN_BTCH_NUM"/>
+<field included="N" fieldName="MTPI_TIMES_THRU_IND"/>
+<field included="N" fieldName="MTPI_SEND_MAP_IND"/>
+<field included="N" fieldName="MTPI_CURSOR_POS_IND"/>
+                            </field>
+                            <field included="N" fieldName="MIR_MSGE_DATA">
+<field included="N" fieldName="MIR_MSGE_MAX_LINES"/>
+<field included="N" fieldName="MIR_MSGE_LINES_USED"/>
+                            </field>
+                            <field included="Y" fieldName="MIR_SCREEN_1">
+<field included="Y" fieldName="MIR_SCREEN_1_FIELDS">
+    <field included="Y" fieldName="MIR_TRNID"/>
+    <field included="N" fieldName="MIR_FORCE"/>
+    <field included="N" fieldName="MIR_HDG"/>
+    <field included="N" fieldName="MIR_MSFLDA"/>
+    <field included="N" fieldName="MIR_MSFLDB"/>
+    <field included="Y" fieldName="MIR_CMD"/>
+    <field included="N" fieldName="MIR_MSGE_TABLE">
+        <field included="N" fieldName="MIR_MSGE_T_SUB"/>
+    </field>
+    <field included="Y" fieldName="MIR_POLNO"/>
+    <field included="Y" fieldName="MIR_POLSF"/>
+    <field included="Y" fieldName="MIR_MENAE"/>
+    <field included="N" fieldName="MIR_POLST"/>
+    <field included="N" fieldName="MIR_CLSNM"/>
+    <field included="N" fieldName="MIR_CVGTL"/>
+    <field included="N" fieldName="MIR_AGT_TABLE">
+        <field included="N" fieldName="MIR_AGT_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_SHR_TABLE">
+        <field included="N" fieldName="MIR_SHR_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ABR_TABLE">
+        <field included="N" fieldName="MIR_ABR_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ANM_TABLE">
+        <field included="N" fieldName="MIR_ANM_T_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_PLNCD"/>
+    <field included="N" fieldName="MIR_RTSCL"/>
+    <field included="N" fieldName="MIR_EXEMPT"/>
+    <field included="Y" fieldName="MIR_ISLOC"/>
+    <field included="Y" fieldName="MIR_CRLOC"/>
+    <field included="N" fieldName="MIR_CTRYC"/>
+    <field included="N" fieldName="MIR_CRNCY"/>
+    <field included="Y" fieldName="MIR_AGENT"/>
+    <field included="N" fieldName="MIR_BRNCH"/>
+    <field included="N" fieldName="MIR_LTNAA"/>
+    <field included="N" fieldName="MIR_BRNAM"/>
+    <field included="N" fieldName="MIR_MAGNM"/>
+    <field included="N" fieldName="MIR_APPLS"/>
+    <field included="N" fieldName="MIR_APLSI"/>
+    <field included="N" fieldName="MIR_APLMS"/>
+    <field included="N" fieldName="MIR_APPLR"/>
+    <field included="N" fieldName="MIR_APPLT"/>
+    <field included="N" fieldName="MIR_PCLI"/>
+    <field included="N" fieldName="MIR_APPSM"/>
+    <field included="N" fieldName="MIR_RSHIN"/>
+    <field included="N" fieldName="MIR_UNMIN"/>
+    <field included="N" fieldName="MIR_PASUW"/>
+    <field included="N" fieldName="MIR_ZAPIND"/>
+    <field included="N" fieldName="MIR_SUPII"/>
+    <field included="N" fieldName="MIR_LNPII"/>
+    <field included="N" fieldName="MIR_RPLPI"/>
+    <field included="N" fieldName="MIR_PLCNF"/>
+    <field included="N" fieldName="MIR_OPTKI"/>
+    <field included="N" fieldName="MIR_CONOP"/>
+    <field included="N" fieldName="MIR_CONOS"/>
+    <field included="N" fieldName="MIR_RLST1"/>
+    <field included="N" fieldName="MIR_APPLF"/>
+    <field included="N" fieldName="MIR_NOAPP"/>
+    <field included="N" fieldName="MIR_RHIND"/>
+    <field included="N" fieldName="MIR_RHUSR"/>
+    <field included="N" fieldName="MIR_RQHDT"/>
+    <field included="N" fieldName="MIR_RQRDT"/>
+    <field included="N" fieldName="MIR_UWCID"/>
+    <field included="N" fieldName="MIR_IRPGM"/>
+    <field included="N" fieldName="MIR_APPRE"/>
+    <field included="N" fieldName="MIR_TLIAIND"/>
+    <field included="N" fieldName="MIR_APPRD"/>
+    <field included="N" fieldName="MIR_BONI"/>
+    <field included="N" fieldName="MIR_PRTDTE"/>
+    <field included="N" fieldName="MIR_NBSYS"/>
+    <field included="N" fieldName="MIR_APPSRC"/>
+    <field included="N" fieldName="MIR_PARCD"/>
+    <field included="N" fieldName="MIR_LOB"/>
+    <field included="N" fieldName="MIR_LOBD"/>
+    <field included="N" fieldName="MIR_SOF"/>
+    <field included="N" fieldName="MIR_SOFD"/>
+    <field included="N" fieldName="MIR_VRSP"/>
+    <field included="N" fieldName="MIR_VRSPD"/>
+    <field included="N" fieldName="MIR_PRMDT"/>
+    <field included="N" fieldName="MIR_PREM"/>
+    <field included="N" fieldName="MIR_COMUT"/>
+    <field included="N" fieldName="MIR_ENHC"/>
+    <field included="N" fieldName="MIR_ENHCD"/>
+    <field included="N" fieldName="MIR_ISLOCD"/>
+    <field included="N" fieldName="MIR_INTR"/>
+    <field included="N" fieldName="MIR_ACCUPL"/>
+    <field included="N" fieldName="MIR_POLDTE"/>
+    <field included="N" fieldName="MIR_DTETYP"/>
+    <field included="N" fieldName="MIR_COORDNM"/>
+    <field included="N" fieldName="MIR_SFACD"/>
+    <field included="N" fieldName="MIR_SFAPY"/>
+    <field included="N" fieldName="MIR_SFASC"/>
+    <field included="N" fieldName="MIR_SFANM"/>
+    <field included="N" fieldName="MIR_COORD"/>
+    <field included="N" fieldName="MIR_MAILDT"/>
+    <field included="N" fieldName="MIR_PFKY_TABLE">
+        <field included="N" fieldName="MIR_PFKY_T_SUB"/>
+    </field>
+</field>
+<field included="N" fieldName="MIR_SCREEN_1_ATTRB">
+    <field included="N" fieldName="MIR_TRNID_A"/>
+    <field included="N" fieldName="MIR_FORCE_A"/>
+    <field included="N" fieldName="MIR_HDG_A"/>
+    <field included="N" fieldName="MIR_MSFLDA_A"/>
+    <field included="N" fieldName="MIR_MSFLDB_A"/>
+    <field included="N" fieldName="MIR_CMD_A"/>
+    <field included="N" fieldName="MIR_MSGE_TABLE_A">
+        <field included="N" fieldName="MIR_MSGE_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_POLNO_A"/>
+    <field included="N" fieldName="MIR_POLSF_A"/>
+    <field included="N" fieldName="MIR_MENAE_A"/>
+    <field included="N" fieldName="MIR_POLST_A"/>
+    <field included="N" fieldName="MIR_CLSNM_A"/>
+    <field included="N" fieldName="MIR_CVGTL_A"/>
+    <field included="N" fieldName="MIR_AGT_TABLE_A">
+        <field included="N" fieldName="MIR_AGT_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_SHR_TABLE_A">
+        <field included="N" fieldName="MIR_SHR_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ABR_TABLE_A">
+        <field included="N" fieldName="MIR_ABR_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ANM_TABLE_A">
+        <field included="N" fieldName="MIR_ANM_T_A_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_PLNCD_A"/>
+    <field included="N" fieldName="MIR_RTSCL_A"/>
+    <field included="N" fieldName="MIR_EXEMPT_A"/>
+    <field included="N" fieldName="MIR_ISLOC_A"/>
+    <field included="N" fieldName="MIR_CRLOC_A"/>
+    <field included="N" fieldName="MIR_CTRYC_A"/>
+    <field included="N" fieldName="MIR_CRNCY_A"/>
+    <field included="N" fieldName="MIR_AGENT_A"/>
+    <field included="N" fieldName="MIR_BRNCH_A"/>
+    <field included="N" fieldName="MIR_LTNAA_A"/>
+    <field included="N" fieldName="MIR_BRNAM_A"/>
+    <field included="N" fieldName="MIR_MAGNM_A"/>
+    <field included="N" fieldName="MIR_APPLS_A"/>
+    <field included="N" fieldName="MIR_APLSI_A"/>
+    <field included="N" fieldName="MIR_APLMS_A"/>
+    <field included="N" fieldName="MIR_APPLR_A"/>
+    <field included="N" fieldName="MIR_APPLT_A"/>
+    <field included="N" fieldName="MIR_PCLI_A"/>
+    <field included="N" fieldName="MIR_APPSM_A"/>
+    <field included="N" fieldName="MIR_RSHIN_A"/>
+    <field included="N" fieldName="MIR_UNMIN_A"/>
+    <field included="N" fieldName="MIR_PASUW_A"/>
+    <field included="N" fieldName="MIR_ZAPIND_A"/>
+    <field included="N" fieldName="MIR_SUPII_A"/>
+    <field included="N" fieldName="MIR_LNPII_A"/>
+    <field included="N" fieldName="MIR_RPLPI_A"/>
+    <field included="N" fieldName="MIR_PLCNF_A"/>
+    <field included="N" fieldName="MIR_OPTKI_A"/>
+    <field included="N" fieldName="MIR_CONOP_A"/>
+    <field included="N" fieldName="MIR_CONOS_A"/>
+    <field included="N" fieldName="MIR_RLST1_A"/>
+    <field included="N" fieldName="MIR_APPLF_A"/>
+    <field included="N" fieldName="MIR_NOAPP_A"/>
+    <field included="N" fieldName="MIR_RHIND_A"/>
+    <field included="N" fieldName="MIR_RHUSR_A"/>
+    <field included="N" fieldName="MIR_RQHDT_A"/>
+    <field included="N" fieldName="MIR_RQRDT_A"/>
+    <field included="N" fieldName="MIR_UWCID_A"/>
+    <field included="N" fieldName="MIR_IRPGM_A"/>
+    <field included="N" fieldName="MIR_APPRE_A"/>
+    <field included="N" fieldName="MIR_TLIAIND_A"/>
+    <field included="N" fieldName="MIR_APPRD_A"/>
+    <field included="N" fieldName="MIR_BONI_A"/>
+    <field included="N" fieldName="MIR_PRTDTE_A"/>
+    <field included="N" fieldName="MIR_NBSYS_A"/>
+    <field included="N" fieldName="MIR_APPSRC_A"/>
+    <field included="N" fieldName="MIR_PARCD_A"/>
+    <field included="N" fieldName="MIR_LOB_A"/>
+    <field included="N" fieldName="MIR_LOBD_A"/>
+    <field included="N" fieldName="MIR_SOF_A"/>
+    <field included="N" fieldName="MIR_SOFD_A"/>
+    <field included="N" fieldName="MIR_VRSP_A"/>
+    <field included="N" fieldName="MIR_VRSPD_A"/>
+    <field included="N" fieldName="MIR_PRMDT_A"/>
+    <field included="N" fieldName="MIR_PREM_A"/>
+    <field included="N" fieldName="MIR_COMUT_A"/>
+    <field included="N" fieldName="MIR_ENHC_A"/>
+    <field included="N" fieldName="MIR_ENHCD_A"/>
+    <field included="N" fieldName="MIR_ISLOCD_A"/>
+    <field included="N" fieldName="MIR_INTR_A"/>
+    <field included="N" fieldName="MIR_ACCUPL_A"/>
+    <field included="N" fieldName="MIR_POLDTE_A"/>
+    <field included="N" fieldName="MIR_DTETYP_A"/>
+    <field included="N" fieldName="MIR_COORDNM_A"/>
+    <field included="N" fieldName="MIR_SFACD_A"/>
+    <field included="N" fieldName="MIR_SFAPY_A"/>
+    <field included="N" fieldName="MIR_SFASC_A"/>
+    <field included="N" fieldName="MIR_SFANM_A"/>
+    <field included="N" fieldName="MIR_COORD_A"/>
+    <field included="N" fieldName="MIR_MAILDT_A"/>
+    <field included="N" fieldName="MIR_PFKY_TABLE_A">
+        <field included="N" fieldName="MIR_PFKY_T_A_SUB"/>
+    </field>
+</field>
+<field included="N" fieldName="MIR_SCREEN_1_LENGTHS">
+    <field included="N" fieldName="MIR_TRNID_L"/>
+    <field included="N" fieldName="MIR_FORCE_L"/>
+    <field included="N" fieldName="MIR_HDG_L"/>
+    <field included="N" fieldName="MIR_MSFLDA_L"/>
+    <field included="N" fieldName="MIR_MSFLDB_L"/>
+    <field included="N" fieldName="MIR_CMD_L"/>
+    <field included="N" fieldName="MIR_MSGE_TABLE_L">
+        <field included="N" fieldName="MIR_MSGE_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_POLNO_L"/>
+    <field included="N" fieldName="MIR_POLSF_L"/>
+    <field included="N" fieldName="MIR_MENAE_L"/>
+    <field included="N" fieldName="MIR_POLST_L"/>
+    <field included="N" fieldName="MIR_CLSNM_L"/>
+    <field included="N" fieldName="MIR_CVGTL_L"/>
+    <field included="N" fieldName="MIR_AGT_TABLE_L">
+        <field included="N" fieldName="MIR_AGT_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_SHR_TABLE_L">
+        <field included="N" fieldName="MIR_SHR_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ABR_TABLE_L">
+        <field included="N" fieldName="MIR_ABR_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_ANM_TABLE_L">
+        <field included="N" fieldName="MIR_ANM_T_L_SUB"/>
+    </field>
+    <field included="N" fieldName="MIR_PLNCD_L"/>
+    <field included="N" fieldName="MIR_RTSCL_L"/>
+    <field included="N" fieldName="MIR_EXEMPT_L"/>
+    <field included="N" fieldName="MIR_ISLOC_L"/>
+    <field included="N" fieldName="MIR_CRLOC_L"/>
+    <field included="N" fieldName="MIR_CTRYC_L"/>
+    <field included="N" fieldName="MIR_CRNCY_L"/>
+    <field included="N" fieldName="MIR_AGENT_L"/>
+    <field included="N" fieldName="MIR_BRNCH_L"/>
+    <field included="N" fieldName="MIR_LTNAA_L"/>
+    <field included="N" fieldName="MIR_BRNAM_L"/>
+    <field included="N" fieldName="MIR_MAGNM_L"/>
+    <field included="N" fieldName="MIR_APPLS_L"/>
+    <field included="N" fieldName="MIR_APLSI_L"/>
+    <field included="N" fieldName="MIR_APLMS_L"/>
+    <field included="N" fieldName="MIR_APPLR_L"/>
+    <field included="N" fieldName="MIR_APPLT_L"/>
+    <field included="N" fieldName="MIR_PCLI_L"/>
+    <field included="N" fieldName="MIR_APPSM_L"/>
+    <field included="N" fieldName="MIR_RSHIN_L"/>
+    <field included="N" fieldName="MIR_UNMIN_L"/>
+    <field included="N" fieldName="MIR_PASUW_L"/>
+    <field included="N" fieldName="MIR_ZAPIND_L"/>
+    <field included="N" fieldName="MIR_SUPII_L"/>
+    <field included="N" fieldName="MIR_LNPII_L"/>
+    <field included="N" fieldName="MIR_RPLPI_L"/>
+    <field included="N" fieldName="MIR_PLCNF_L"/>
+    <field included="N" fieldName="MIR_OPTKI_L"/>
+    <field included="N" fieldName="MIR_CONOP_L"/>
+    <field included="N" fieldName="MIR_CONOS_L"/>
+    <field included="N" fieldName="MIR_RLST1_L"/>
+    <field included="N" fieldName="MIR_APPLF_L"/>
+    <field included="N" fieldName="MIR_NOAPP_L"/>
+    <field included="N" fieldName="MIR_RHIND_L"/>
+    <field included="N" fieldName="MIR_RHUSR_L"/>
+    <field included="N" fieldName="MIR_RQHDT_L"/>
+    <field included="N" fieldName="MIR_RQRDT_L"/>
+    <field included="N" fieldName="MIR_UWCID_L"/>
+    <field included="N" fieldName="MIR_IRPGM_L"/>
+    <field included="N" fieldName="MIR_APPRE_L"/>
+    <field included="N" fieldName="MIR_TLIAIND_L"/>
+    <field included="N" fieldName="MIR_APPRD_L"/>
+    <field included="N" fieldName="MIR_BONI_L"/>
+    <field included="N" fieldName="MIR_PRTDTE_L"/>
+    <field included="N" fieldName="MIR_NBSYS_L"/>
+    <field included="N" fieldName="MIR_APPSRC_L"/>
+    <field included="N" fieldName="MIR_PARCD_L"/>
+    <field included="N" fieldName="MIR_LOB_L"/>
+    <field included="N" fieldName="MIR_LOBD_L"/>
+    <field included="N" fieldName="MIR_SOF_L"/>
+    <field included="N" fieldName="MIR_SOFD_L"/>
+    <field included="N" fieldName="MIR_VRSP_L"/>
+    <field included="N" fieldName="MIR_VRSPD_L"/>
+    <field included="N" fieldName="MIR_PRMDT_L"/>
+    <field included="N" fieldName="MIR_PREM_L"/>
+    <field included="N" fieldName="MIR_COMUT_L"/>
+    <field included="N" fieldName="MIR_ENHC_L"/>
+    <field included="N" fieldName="MIR_ENHCD_L"/>
+    <field included="N" fieldName="MIR_ISLOCD_L"/>
+    <field included="N" fieldName="MIR_INTR_L"/>
+    <field included="N" fieldName="MIR_ACCUPL_L"/>
+    <field included="N" fieldName="MIR_POLDTE_L"/>
+    <field included="N" fieldName="MIR_DTETYP_L"/>
+    <field included="N" fieldName="MIR_COORDNM_L"/>
+    <field included="N" fieldName="MIR_SFACD_L"/>
+    <field included="N" fieldName="MIR_SFAPY_L"/>
+    <field included="N" fieldName="MIR_SFASC_L"/>
+    <field included="N" fieldName="MIR_SFANM_L"/>
+    <field included="N" fieldName="MIR_COORD_L"/>
+    <field included="N" fieldName="MIR_MAILDT_L"/>
+    <field included="N" fieldName="MIR_PFKY_TABLE_L">
+        <field included="N" fieldName="MIR_PFKY_T_L_SUB"/>
+    </field>
+</field>
+                            </field>
+                        </field>
+                    </interfaceField>
+                </segment>
+            </interface>
+        </serviceInterface>
+        <version>0</version>
+    </serviceOutputInterface>
+    <applicationDataStructureType>Map</applicationDataStructureType>
+    <messageVisitorRuntimeType>CICS_CHANNEL</messageVisitorRuntimeType>
+    <ccsid>IBM037</ccsid>
+    <totalExecCount>0</totalExecCount>
+    <failedCount>0</failedCount>
+    <trancodeOverride>NSOM0300</trancodeOverride>
+    <trimOutputLeadingWhitespace>false</trimOutputLeadingWhitespace>
+    <trimOutputTrailingWhitespace>true</trimOutputTrailingWhitespace>
+    <escapeOutputControlCharacters>false</escapeOutputControlCharacters>
+    <initializeInputFields>false</initializeInputFields>
+    <omitOutputFieldsByValue>false</omitOutputFieldsByValue>
+    <omitOutputFieldsByValueByte>0x00</omitOutputFieldsByValueByte>
+    <omitOutputEmptyTags>false</omitOutputEmptyTags>
+    <enforceMinArrayOccurrence>false</enforceMinArrayOccurrence>
+    <enforceMinArrayOccurrenceResponse>false</enforceMinArrayOccurrenceResponse>
+</service>
